@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    
+     <!-- <button id="btn"  >Submit</button>
+       -->
+     <!-- <a   href="https://google.com" class="btn">Click Me</a> -->
+
+     <form id="form">
+        <label for="Email"></label>
+        <input type="email" placeholder="email">
+        <br><br>
+        <label for="password"></label>
+        <input type="password" placeholder="password">
+        <button type="submit">Submit</button>
+     </form>
+
+     <script>
+        // let a = document.getElementById("btn")
+        // a.addEventListener("click",(e)=>{
+        //     e.preventDefault()
+        //     console.log("hello");
+        // })
+
+        let form = document.getElementById("form")
+        form.addEventListener("submit",(e)=>{
+            e.preventDefault()
+            console.log("");
+        })
+
+        
+
+     </script>
+</body>
+</html>
