@@ -1,40 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM</title>
-</head>
-<body>
-    
-     <!-- <button id="btn"  >Submit</button>
+  </head>
+  <body>
+    <!-- <button id="btn"  >Submit</button>
        -->
-     <!-- <a   href="https://google.com" class="btn">Click Me</a> -->
+    <!-- <a   href="https://google.com" class="btn">Click Me</a> -->
 
-     <form id="form">
-        <label for="Email"></label>
-        <input type="email" placeholder="email">
-        <br><br>
-        <label for="password"></label>
-        <input type="password" placeholder="password">
-        <button type="submit">Submit</button>
-     </form>
+    <!-- <form id="form">
+      <label for="Email"></label>
+      <input type="email" placeholder="email" id="email" />
+      <br /><br />
+      <label for="password"></label>
+      <input type="password" placeholder="password" id="password" />
+      <button type="submit">Submit</button>
+    </form> -->
 
-     <script>
-        // let a = document.getElementById("btn")
-        // a.addEventListener("click",(e)=>{
-        //     e.preventDefault()
-        //     console.log("hello");
-        // })
 
-        let form = document.getElementById("form")
-        form.addEventListener("submit",(e)=>{
-            e.preventDefault()
-            console.log("");
-        })
+    <div id="parent">
+  Parent
+  <div class="child">Child</div>
+</div>
 
-        
 
-     </script>
-</body>
+
+    <script>
+          // let a = document.getElementById("btn")
+          // a.addEventListener("click",(e)=>{
+          //     e.preventDefault()
+          //     console.log("hello");
+          // })
+
+      //     let form = document.getElementById("form");
+      //     form.addEventListener("submit", (e) => {
+      //       e.preventDefault();
+      //       let email = document.getElementById("email");
+      //       let password = document.getElementById("password");
+
+
+      // if (email.value == "" || password.value == "") {
+      //   alert("Ensure you input a value in both fields!");
+      // } else {
+      //   // perform operation with form input
+      //   alert("This form has been successfully submitted!");
+      //   console.log(
+      //     `This form has a email of ${email.value} and password of ${password.value}`
+      //   );
+
+      //   email.value = "";
+      //   password.value = ""};
+    // });
+
+
+
+//       document.getElementById("parent").addEventListener("mouseover", () => {
+//   console.log("mouseover fired");
+// });
+
+      document.getElementById("parent").addEventListener("mouseenter", () => {
+  console.log("mouseenter fired");
+});
+
+
+    </script>
+  </body>
 </html>

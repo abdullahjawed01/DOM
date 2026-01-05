@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+</head>
+<body class="h-screen flex justify-center items-center bg-orange-200">
+    <form id="login form" class="p-10 w-100  shadow-md shadow-black rounded-2xl bg-white" >
+        <h1 class="text-center"> Login Form</h1>
+        <br>
+        <label for="Email" >Email</label><br>
+        <input id="email" type="email" placeholder=" enter email" class="border-2 p-20px rounded-xl h-10 w-80 text-left">
+        <br><br>
+        <label for="password" class="text-left ">Password</label><br>
+        <input id="password" type="password" placeholder="  enter your pass"  class="border-2 p-20px rounded-xl h-10   w-80 text-left">
+        <br><br>
+        <button type="submit" class="bg-cyan-500 shadow-lg shadow-cyan-500/50 w-80 items-center shadow-black bg-blue-500 rounded-2xl h-10 w-40 items-center justify-center">Submit</button>
+
+    </form>
+    
+    <script>
+        let form = document.getElementById("login form")
+        form.addEventListener("submit",(e)=>{
+            e.preventDefault()
+
+            let email = document.getElementById("email").value
+            let password = document.getElementById("password").value
+
+            let userObject = {
+                email,
+                password
+            }
+
+            console.log(userObject);
+        })
+
+    </script>
+    
+</body>
+</html>
