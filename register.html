@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="h-screen flex justify-center items-center bg-orange-200">
+
+<form id="loginForm" class="p-10 shadow-md shadow-black rounded-2xl bg-white">
+    <h1 class="text-center text-xl font-bold">Register Form</h1><br>
+
+    <label for="fullname">Full Name</label><br>
+    <input name="name" id="fullname" type="text" class="border-2 p-3 rounded-xl h-10 w-80"><br><br>
+
+    <label  for="email">Email</label><br>
+    <input name="email" id="email" type="email" class="border-2 p-3 rounded-xl h-10 w-80"><br><br>
+
+    <label for="password">Password</label><br>
+    <input name="password" id="password" type="password" class="border-2 p-3 rounded-xl h-10 w-80"><br><br>
+
+    <label for="phone">Phone</label><br>
+    <input name="phone" id="phone" type="tel" class="border-2 p-3 rounded-xl h-10 w-80"><br><br>
+
+    <label for="gender">Gender</label><br>
+    <select name="gender" id="gender" class="border-2 p-2 w-80 rounded-xl">
+        <option value="">-- Select --</option>
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+    </select><br><br>
+
+    <button type="submit" id="submit"
+        class="bg-blue-500 text-white rounded-2xl h-10 w-80 hover:bg-blue-600 cursor-pointer">
+        Submit
+    </button>
+   
+</form>
+
+
+<script>
+let form = document.getElementById("loginForm");
+
+form.addEventListener("submit", async (e)=> {
+    e.preventDefault();
+
+    let name = document.getElementById("name")
+    
+
+    let userObject = {
+        name: fullname.value,
+        email: email.value,
+        password: password.value,
+        phone: phone.value,
+        gender: gender.value
+    };
+
+    console.log(userObject);
+
+  
+
+});
+</script>
+
+</body>
+</html>
