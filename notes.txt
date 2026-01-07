@@ -1,0 +1,56 @@
+// What is DOM 
+Document object model
+
+//The DOM is a tree-like structure created by the browser from your html.
+
+DOM tree example
+
+
+                                HTML 
+             (Head)                                     (body) 
+    link     meta     title                         p            div
+                                            strong 
+                                                                     img 
+                                                hello world                 
+
+
+it allows js to read, modify,add,delete, changes to html&css. 
+
+HTML = structure
+CSS = style 
+DOM = bridge between HTML & JS
+
+// which adds functionality to your website 
+
+//DOM is an application programming interface(API) for manipulating HTML Document
+
+// when a web page gets loads tge browser creates a DOM tree structure for it which is also known as DOM tree 
+
+//In DOM tree, the Document is an root node of it  
+
+//Open your browser and open console using f12 or inspect 
+and type console.log(document)
+
+
+// DoM methods
+
+//1. getElementById() tag and element are same 
+//2. getElementsByClassName
+//3. getElementsByTagName
+//4. document.querySelector
+//5. document.querySelectorAll
+//6. list.parentElement (child se parent nikalna)
+//7. document.getElementById("text").innerHTML = "<h1>hello</h1>"
+//8. navigator.geolocation.getCurrentPosition(
+            map=>{
+                const lat = map.coords.latitude;
+                const long = map.coords.longitude;
+                console.log(`https://www.google.com.maps?q=${lat},${long}`);
+                
+            },
+            error =>{
+                console.log(error);
+            }
+        )
+
+//9.

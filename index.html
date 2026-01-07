@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <h1 id="text">Hello world</h1>
+    <h2 id="text2">Hello world 2</h2>
+    <p id="parah">I am abdullah jawed</p>
+    <p class="ptext">hello i am p tag</p>
+    <p class="ptext">hello i am 2ndp tag</p>
+    <p>i am p1</p>
+    <p> i am p2</p>
+    <p> i am p3</p> -->
+
+    <!-- <p class = "myfont"> i am p1</p>
+    <p class="myfont">i am p2</p>
+    <h1 class="h1Tag">i am abdullah</h1>
+    <p class="text">i am p3</p> -->
+
+
+
+    <!-- traversing element  -->
+    <ul>
+        <li>one</li>
+        <li id="list">two</li>
+        <li>three</li>
+    </ul>
+
+    <!-- inner HTML  -->
+     <p id="text">Lorem ipsum dolor sit amet.</p>
+    
+
+    <!--navigator  -->
+    <h1>hello map</h1>
+
+    <script>
+    //   let a = document.getElementsByClassName("ptext");
+    //   console.log(a[0], a[1]);
+    // let a = document.getElementsByTagName("p")
+    // console.log(a[0],a[1],a[2]);
+    //    <!--Query Selector--> 
+    //
+        // let allFonts = document.querySelectorAll(".myfont")
+        // for(let x of allFonts){
+        //     console.log(x);
+        // }
+
+        // let list = document.getElementById("list")
+        // console.log(list);
+        // let parentTag = list.parentElement
+        // console.log(parentTag);
+        // let text = document.getElementById("text").innerHTML = "<h1>hello</h1>"
+        // console.log(text);
+        
+        navigator.geolocation.getCurrentPosition(
+            map=>{
+                const lat = map.coords.latitude;
+                const long = map.coords.longitude;
+                console.log(`https://www.google.com.maps?q=${lat},${long}`);
+                
+            },
+            error =>{
+                console.log(error);
+            }
+        )
+
+
+
+
+    </script>
+  </body>
+</html>
